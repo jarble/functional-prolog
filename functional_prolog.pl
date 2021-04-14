@@ -57,7 +57,7 @@ functional_syntax(Input,Output) :-
 	functional_syntax(Params,Params1),
 	A1 =.. [Name,Params1],
 	functional_syntax(A1 :- B1),
-	writeln((A1:-B1)),
+	% writeln((A1:-B1)),
 	functional_syntax(B1,Output).
 	
 functional_syntax_({A},true) :- A.
