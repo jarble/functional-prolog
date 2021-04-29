@@ -44,7 +44,6 @@ functional_syntax(Input,C) :-
 functional_syntax(Input,C) :-
 	Input =.. [Name|Params],
     member1(Name,[=,==,\=,>,<,>=,=<,not]),
-    
     functional_syntax(Params,Params1),
     % writeln(Input),
     Output =.. [Name|Params1],
